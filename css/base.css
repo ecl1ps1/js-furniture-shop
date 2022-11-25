@@ -1,0 +1,75 @@
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body > main > div.impuls > div > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13%;
+}
+
+.pointer {
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+
+.pointer:hover {
+    opacity: 0.75;
+}
+
+/*   фон кнопки розовый(на белый)     */
+
+.buy-offer-btn:hover{
+    background-color: white !important;
+    border: 1px solid black !important;
+    color: black !important;
+}
+
+
+.buy-offer-btn:active {
+    opacity: 0.5;
+}
+
+.map-btn:hover{
+    background-color: white !important;
+    border: 2px solid white !important;
+    color: black !important;
+}
+
+
+.map-btn:active {
+    opacity: 0.5;
+}
+
+
+
+
+/*      --------------------               */
+
+/* фон кнопки белый(на розовый)         */
+.contacts-call-number-btn > button:hover,
+.head-call-number-btn > button:hover{
+    background-color: #F13C6E !important;
+    border: none;
+}
+
+.head-call-number-btn > button > span:hover {
+    color: white;
+}
+.contacts-call-number-btn > button:active,
+.head-call-number-btn > button:active {
+    opacity: 0.5;
+}
+/*         ------------------                */
+
+.confirm-window {
+    display: none;
+}
+.login-menu {
+    display: none;
+}

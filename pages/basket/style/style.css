@@ -1,0 +1,800 @@
+@charset "UTF-8";
+/* background: #EFEFEF;  white */
+/* background: #F13C6E; pink  */
+/* background: #333333; black */
+/*          шапка          */
+body {
+  font-family: "Roboto";
+}
+
+header {
+  border-bottom: 1px solid #EFEFEF;
+}
+header nav {
+  background: #F5F5F5;
+}
+header nav ul {
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+header .head-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header .head-row .head-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .head-row .head-logo .logo-text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  color: #F13C6E;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-left: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+header .head-row .head-search label {
+  background: #EFEFEF;
+  border-radius: 40px;
+  border: 1px solid #F13C6E;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-right: 50px;
+  margin-left: 100px;
+}
+header .head-row .head-search label input {
+  border: none;
+  background: inherit;
+  outline: none;
+  width: inherit;
+  color: #333333;
+  padding-left: 3px;
+}
+header .head-row .head-search label img {
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+header .head-row .head-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .head-row .head-number span {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+header .head-row .head-number .head-call-number-btn button {
+  background-color: white;
+  border: 2px solid #F13C6E;
+  border-radius: 40px;
+  margin-left: 40px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 27px;
+  padding-right: 26px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+header .head-row .head-number .head-call-number-btn button span {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*       НАВИГАЦИОННЫЕ КНОПКИ(ШАПКА)              */
+.nav-buttons {
+  width: 645px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.nav-buttons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-buttons ul li {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*       БЛОК СО СТУЛОМ ПОД ШАПКОЙ             */
+.stock-chair {
+  background-image: url(../images/beauty-head.svg);
+  height: 600px;
+}
+.stock-chair .stock-chair-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 308px;
+  padding-top: 192px;
+}
+.stock-chair .stock-chair-column h1 {
+  font-family: "Roboto";
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+.stock-chair .stock-chair-column p {
+  padding-top: 50px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  line-height: 20px;
+}
+.stock-chair .stock-chair-column .more-button button {
+  margin-top: 50px;
+  background: #F13C6E;
+  border-radius: 40px;
+  border: 2px solid white;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.stock-chair .stock-chair-column .more-button button span {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more-button > button:hover {
+  background-color: white !important;
+  border: none;
+}
+.more-button > button:hover span {
+  color: black !important;
+}
+
+.more-button > button:active {
+  opacity: 0.5;
+}
+
+/*            СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ                  */
+.special-offers {
+  background: #F5F5F5;
+}
+.special-offers h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 80px;
+}
+.special-offers .special-offers-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 38px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.special-offers .special-offers-row .special-offer-image {
+  border: 1px solid rgb(235, 235, 235);
+  margin-top: 25px;
+}
+.special-offers .special-offers-row .special-offer {
+  margin-right: 30px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.special-offers .special-offers-row .special-offer p {
+  text-align: center;
+  width: 195px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 20px;
+}
+.special-offers .special-offers-row .special-offer span {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0.05em;
+  padding-top: 20px;
+}
+.special-offers .special-offers-row .special-offer .buy-offer-button button {
+  cursor: pointer;
+  color: white;
+  font-family: "Roboto";
+  background-color: #F13C6E;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  border: 1px solid #F13C6E;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.special-offers .special-offers-row .special-offer:last-child {
+  margin-right: 0;
+}
+
+main {
+  background: #F5F5F5 !important;
+}
+
+/*         БЛОК С ДВУМЯ БЛОКАМИ(ПОДПИСКА И КАРТА)                 */
+.subscription .subscription-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.subscription .subscription-row .sub-block {
+  width: 540px;
+  background-color: #F13C6E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 20px;
+}
+.subscription .subscription-row .sub-block .sub-mail-img {
+  margin-left: 65px;
+}
+.subscription .subscription-row .sub-block .sub-map-img {
+  margin-left: 96px;
+}
+.subscription .subscription-row .sub-block .sub-map-img img {
+  width: 188px;
+}
+.subscription .subscription-row .sub-block label {
+  background: white;
+  border-radius: 30px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-right: 50px;
+}
+.subscription .subscription-row .sub-block input {
+  border: none;
+  background: #EFEFEF;
+  outline: none;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+.subscription .subscription-row .sub-block h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  padding-top: 35px;
+}
+.subscription .subscription-row .sub-block p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  margin-top: 25px;
+}
+.subscription .subscription-row .sub-block .sub-block-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+.subscription .subscription-row .sub-block .map-button .map-btn {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  white-space: nowrap;
+  background-color: #F13C6E;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.subscription .subscription-row .sub-text {
+  max-width: 250px;
+}
+.subscription .subscription-row .map-text,
+.subscription .subscription-row .sub-text {
+  padding-left: 40px;
+}
+.subscription .subscription-row input,
+.subscription .subscription-row .map-btn {
+  margin-top: 25px;
+}
+.subscription .subscription-row .map-text {
+  width: 150px;
+}
+
+/*            КАРТИНКИ ТИПО БРЕНДЫ        */
+.impuls {
+  margin-top: 100px;
+}
+
+/*         ПОПУЛЯРНЫЕ КАТЕГОРИИ                    */
+.popular-categories-section {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+/*      НЕДАВНО ПРОСМОТРЕННЫЕ          */
+.special-offers-second {
+  padding-bottom: 81px;
+}
+
+.popular-categories {
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.popular-categories .categories-caption {
+  border-bottom: 1px solid #EFEFEF;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+  width: 255px;
+}
+.popular-categories .categories-caption h1 {
+  width: 50px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.popular-categories .categories-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 150px;
+}
+.popular-categories .categories-row .categories-block ul li {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #828282;
+}
+.popular-categories .categories-elements {
+  max-width: 99px;
+}
+
+/*             КОНТАКТЫ               */
+.contacts .contacts-row {
+  margin-top: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 38px;
+}
+.contacts .contacts-row .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contacts .contacts-row .social-links div {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #F13C6E;
+  border-radius: 50%;
+  padding: 10px;
+  min-width: 30px;
+  min-height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contacts .contacts-row .contacts-adress span {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 70px;
+}
+.contacts .contacts-row .contacts-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts .contacts-row .contacts-call .contacts-number {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.contacts .contacts-call-number-btn button {
+  background-color: white;
+  border: 2px solid #F13C6E;
+  border-radius: 40px;
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 27px;
+  padding-right: 26px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contacts .contacts-call-number-btn button span {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*                     СИГНА             */
+.signature {
+  background-color: #EFEFEF;
+}
+.signature .signature-text {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.signature .signature-text span {
+  font-family: "Roboto ";
+  font-size: 12px;
+  font-weight: 400;
+  color: #828282;
+}
+
+/*========*/
+.social-links div:active {
+  opacity: 0.8;
+}
+
+.social-links div:hover {
+  border: 2px solid black;
+  color: white;
+  background-color: #F13C6E !important;
+}
+.social-links div:hover img {
+  -webkit-filter: brightness(100);
+          filter: brightness(100);
+}
+
+/*========*/
+#select-lang {
+  border-radius: 15px;
+  padding: 7px 13px;
+  border: 1px solid #F13C6E;
+  margin-right: 15px;
+}
+
+#select-money {
+  border-radius: 15px;
+  padding: 7px 13px;
+  border: 1px solid #F13C6E;
+  margin-left: 15px;
+}
+
+.login-menu {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #F13C6E;
+  background-color: white;
+  padding: 30px 20px;
+  position: absolute;
+  left: 70%;
+  margin-top: 10px;
+}
+.login-menu input {
+  border: 1px solid #F13C6E;
+  border-radius: 15px;
+  margin-top: 0px;
+  padding-left: 9px;
+  height: 30px;
+  margin-bottom: 9px;
+}
+
+.btn {
+  background-color: white;
+  border: 2px solid #F13C6E;
+  border-radius: 40px;
+  margin-left: 0 !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  padding-left: 20px;
+  white-space: nowrap;
+  padding-right: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #F13C6E !important;
+  color: white;
+  border: 2px solid black;
+}
+
+.close-menu {
+  position: relative;
+  bottom: 26px;
+  left: 150px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.close-menu:hover {
+  opacity: 0.7;
+}
+
+.close-menu:active {
+  opacity: 1;
+}
+
+.profile {
+  position: relative;
+  left: 80%;
+  bottom: 50px;
+  width: 240px;
+  border: 1px solid #F13C6E;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.profile .profile-image img {
+  border-radius: 100%;
+}
+.profile .lng-leave {
+  position: relative;
+  left: 20px;
+}
+.profile .profile-name {
+  position: relative;
+  left: 5px;
+  font-size: 20px;
+}
+.profile .basket {
+  position: relative;
+  left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.profile .basket .basket-img {
+  border: 2px solid #F13C6E;
+  border-radius: 100%;
+  padding: 8px;
+}
+.profile .basket .basket-counter {
+  position: relative;
+  top: 15px;
+  right: 10px;
+  width: 35px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  border-radius: 15px;
+  height: 20px;
+  color: white;
+  background-color: #F13C6E;
+}
+
+.basket:hover {
+  opacity: 0.7;
+}
+
+.basket:active {
+  opacity: 1;
+}
+
+.confirm-window {
+  width: 40%;
+  position: fixed;
+  background-color: white;
+  border: 2px solid #F13C6E;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  padding-top: 60px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1 !important;
+}
+.confirm-window h1 {
+  margin-bottom: 50px;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.confirm-window .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 20px;
+}

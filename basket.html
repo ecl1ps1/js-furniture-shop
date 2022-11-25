@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lng-titleBasket">Корзина</title>
+    <link rel="stylesheet" href="./pages/basket/style/basket.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./pages/basket/style/base.css">
+    <link rel="stylesheet" href="./pages/basket/style/reset.css">
+    <link rel="stylesheet" href="./pages/basket/style/fonts.css">
+</head>
+
+<body class="main">
+    <div class="wrapper">
+
+        <header>
+            <nav>
+                <ul>
+                    <select name="select-lang" id="select-lang">
+                        <option value="en" class="select-ru-lang">EN</option>
+                        <option value="ru" class="select-eng-lang">RU</option>
+                    </select>
+                    <li class="pointer lng-delivery">Доставка</li>
+                    <li class="pointer lng-payment">Оплата</li>
+                    <li class="pointer lng-reviews">Отзывы</li>
+                    <li class="pointer lng-answers">Вопрос - ответ</li>
+                    <li class="pointer lng-contacts">Контакты</li>
+                    <select name="select-money" id="select-money">
+                        <option value="rub" class="select-rub-money">RUB</option>
+                        <option value="usd" class="select-usd-money">USD</option>
+                    </select>
+
+                </ul>
+            </nav>
+            <div class="head-row container">
+                <div class="head-logo">
+                    <div class="logo-image">
+                        <img class="logo" src="./images/beauty-logo.svg" alt="logotype">
+                    </div>
+                    <h1 class="logo-text">beauty</h1>
+                </div>
+                <div class="head-number">
+                    <span class="head-number-text">8 (812) 123-45-67</span>
+                    <div class="head-call-number-btn">
+                        <button>
+                            <span class="lng-callBack">Обратный звонок</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <div class="basket-products">
+                <ul>
+                </ul>
+            </div>
+            <div class="total-price">
+                <div class="total-price-content">
+                    <p class="lng-basket-p">Корзина</p>
+                    <div class="total-price-block">
+                        <p class="lng-total-price-text">Общая цена:</p>
+                        <span class="js-total-price">0 $</span>
+                    </div>
+                    <div class="number-of-products">
+                        <span class="lng-counter-products-text">Количество товаров:</span>
+                        <span class="number-goods">0</span>
+                    </div>
+
+                    <div class="buy-button">
+                        <button class="lng-buy btn buyBasketProducts">Купить</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <!--                КОНТАКТЫ               -->
+    <footer>
+        <section class="contacts">
+            <div class="contacts-row container">
+
+                <!--      СОЦ СЕТИ       -->
+
+                <div class="social-links">
+                    <div class="youtube">
+                        <img src="./images/beauty-yt.svg" alt="Youtube">
+                    </div>
+                    <div class="vk">
+                        <img src="./images/beauty-vk.svg" alt="VKontakte">
+                    </div>
+                    <div class="facebook">
+                        <img src="./images/beauty-facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="instagtam">
+                        <img src="./images/beauty-inst.svg" alt="Instagramm">
+                    </div>
+                </div>
+
+                <!--      АДРЕСС         -->
+
+
+
+                <!--  НОМЕР\ОБРАТНЫЙ ЗВОНОК  -->
+
+                <div class="contacts-call">
+                    <div class="contacts-adress">
+                        <span class="lng-adress">
+                            198555, Невский пр. 140, офис 140
+                        </span>
+                    </div>
+                    <span class="contacts-number">
+                        8 (812) 123-45-67
+                    </span>
+                    <div class="contacts-call-number-btn">
+                        <button>
+                            <span class="lng-callBack2">Обратный звонок</span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!--         SIGNA            -->
+
+        <div class="signature">
+            <div class="container signature-text">
+                <span class="lng-authors">
+                    Лучший магазин (с) 2019 Все права защищены.
+                    Интернет-магазин оборудования для салонов красоты
+                </span>
+                <span class="pointer lng-politic">
+                    Политика конфиденциальности
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/lang.js"></script>
+    <script src="./scripts/render.js"></script>
+    <script src="./pages/basket/basketScripts/renderBasket.js"></script>
+</body>
+
+</html>

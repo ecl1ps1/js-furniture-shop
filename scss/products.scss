@@ -1,0 +1,45 @@
+.special-offers {
+    margin-top: 50px;
+    margin-right: 125px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li {
+        display: flex !important;
+        flex-direction: column;
+        margin-left: 150px;
+        border: 2px solid #f13c6e;
+        padding: 35px;
+        border-radius: 15px;
+        margin-top: 50px;
+        p {
+            width: 125px;
+            text-align: center;
+            margin-left: 20px;
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            min-height: 130px;
+        }
+    }
+    img {
+        height: 216px;
+        width: 170px;
+    }
+    span {
+        text-align: center;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}

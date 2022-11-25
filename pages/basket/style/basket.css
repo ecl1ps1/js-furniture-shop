@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500;700&display=swap');
+
+@media screen and (max-width: 1850px) {
+    .basket-products li {
+        width: 120% !important;
+    }
+
+    .total-price {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 1773px) {
+    .basket-products li {
+        width: 110% !important;
+    }
+
+    .total-price {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .basket-products li {
+        width: 100% !important;
+
+    }
+
+    .total-price {
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 1447px) {
+    .basket-products li {
+        width: 100% !important;
+    }
+
+    @media screen and (max-width: 1327px) {
+        .basket-products li {
+            width: 100% !important;
+        }
+
+        @media screen and (max-width: 729px) {
+            .basket-products li {
+                flex-direction: column !important;
+            }
+
+        }
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+main {
+    padding-bottom: 100px;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: -154px;
+    height: 154px;
+}
+
+.total-price {
+    margin-left: 10px;
+}
+
+.basket-products {
+    display: flex;
+    flex-direction: row;
+}
+
+.basket-products li {
+    display: flex;
+    border-radius: 15px;
+    width: 150%;
+    border: 2px solid #F13C6E;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.basket-products li+li {
+    margin-top: 50px;
+}
+
+.total-price {
+    border: 2px solid #F13C6E;
+    width: 240px;
+    height: 10%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+body {
+    font-family: "Roboto" !important;
+    font-size: 20px !important;
+}
+
+.total-price-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.js-total-price {
+    margin-left: 10px;
+}
+
+.total-price-content {
+    margin-top: 40px;
+}
+
+.number-of-products {
+    margin-top: 40px;
+}
+
+.buy-button {
+    margin-top: 50px;
+}
+
+.lng-basket-p {
+    font-weight: bold;
+    font-size: 22px !important;
+}
+
+.name-of-product {
+    width: 20%;
+    padding: 10px 0;
+}

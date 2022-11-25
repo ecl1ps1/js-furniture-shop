@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lng-title">Магазин мебели</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/basket.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body class="main">
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <select name="select-lang" id="select-lang">
+                        <option value="en" class="select-ru-lang">EN</option>
+                        <option value="ru" class="select-eng-lang">RU</option>
+                    </select>
+                    <li class="pointer lng-delivery">Доставка</li>
+                    <li class="pointer lng-payment">Оплата</li>
+                    <li class="pointer lng-reviews">Отзывы</li>
+                    <li class="pointer lng-answers">Вопрос - ответ</li>
+                    <li class="pointer lng-contacts">Контакты</li>
+                    <select name="select-money" id="select-money">
+                        <option value="rub" class="select-rub-money">RUB</option>
+                        <option value="usd" class="select-usd-money">USD</option>
+                    </select>
+
+                </ul>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./images/profile.jpg" width="50px" alt="">
+                    </div>
+                    <div class="profile-name">
+                        <span class="name">name</span>
+                    </div>
+                    <button class="lng-leave btn">Выйти</button>
+                    <div class="basket">
+                        <div class="basket-img">
+                            <img class="open-basket-button" src="./images/basket.png" width="40px" alt="">
+                        </div>
+                        <span class="basket-counter">0</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="head-row container">
+            <div class="head-logo">
+                <div class="logo-image">
+                    <img src="./images/beauty-logo.svg" alt="logotype">
+                </div>
+                <h1 class="logo-text">beauty</h1>
+            </div>
+            <div class="head-search">
+                <label for="search">
+                    <input autocomplete="off" padding-left="10px" placeholder="Поиск" type="text" id="search">
+                </label>
+                <div class="inputWindow">
+                    <ul class="searchList">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="head-number">
+                <span class="head-number-text">8 (812) 123-45-67</span>
+                <div class="head-call-number-btn">
+                    <button>
+                        <span class="lng-callBack">Обратный звонок</span>
+                    </button>
+                    <button class="login lng-login">Войти</button>
+                    <div class="login-menu">
+                        <p class="lng-loginText">Авторизация</p>
+                        <img class="close-menu" src="./images/close.png" width="30px" alt="">
+                        <label for="login"></label>
+                        <input class="login-input" type="text" name="login" placeholder="Login">
+                        <label for="password"></label>
+                        <input class="password-input" type="password" name="password" placeholder="Password">
+                        <button onclick="authorization()" class="login lng-login1 btn">Войти</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="nav-buttons">
+        <ul>
+            <li class="pointer lng-salon">Парикмахерская</li>
+            <li class="pointer lng-barbershop">Барбершоп</li>
+            <li class="pointer lng-manicure">Маникюр</li>
+            <li class="pointer lng-pedicure">Педикюр</li>
+            <li class="pointer lng-massage">Массаж</li>
+            <li class="pointer lng-furniture">Мебель</li>
+        </ul>
+    </div>
+
+    <!--          АКЦИЯ           -->
+
+
+
+    <main>
+        <section class="stock-chair">
+            <div class="container">
+                <div class="stock-chair-column">
+                    <h1 class="lng-superChair">Супер кресло</h1>
+                    <p class="lng-sCText">Текст акции всегда отражает суть, а не просто
+                        болтовню, поэтому внимательнее</p>
+                    <div class="more-button">
+                        <button>
+                            <span class="lng-more">Подробнее</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="confirm-window">
+            <h1 class="lng-confirmTxt">Вы уверены что хотите добавить данный продукт в корзину?</h1>
+            <div class="buttons">
+                <button onclick="onbasket()" class="lng-confirm btn">Подтвердить</button>
+                <button onclick="closeConfirm()" class="lng-cancel btn">Отмена</button>
+            </div>
+        </div>
+        <!--        СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ        -->
+
+        <section id="products" class="special-offers">
+            <div class="container">
+            </div>
+        </section>
+
+        <!--              ПОДПИСКА/КАРТА                  -->
+
+        <section class="subscription">
+            <div class="subscription-row container">
+                <!--  =====================  -->
+                <div class="subscription-container sub-block">
+                    <div class="sub-text">
+                        <h1 class="lng-getBonus">Получайте бонусы и подарки</h1>
+                        <p class="lng-getBonusDisc">Каждый месяц разыгрываем
+                            10 000 рублей для наших клиентов</p>
+                        <label for="sub-input">
+                            <input type="text" name="E-mail" id="sub-input" placeholder="Введите e-mail">
+                        </label>
+                    </div>
+                    <div class="sub-mail-img sub-block-img">
+                        <img src="./images/beauty-mail.svg" alt="mail">
+                    </div>
+                </div>
+                <!-- ======================= -->
+                <div class="map-of-magazines-container sub-block">
+                    <div class="map-text">
+                        <h1 class="lng-welcome">Заходите к нам</h1>
+                        <p class="lng-welcomeDisc">Более 300 магазинов по всей России</p>
+                        <div class="map-button">
+                            <button class="map-btn lng-shopMap">
+                                Карта магазинов
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sub-map-img sub-block-img">
+                        <img src="./images/beauty-car.svg" alt="">
+                    </div>
+                </div>
+                <!-- ======================== -->
+            </div>
+        </section>
+
+        <!--             IMPULS              -->
+
+        <div class="impuls">
+            <div class="container">
+                <img src="./images/beauty-brands.svg" alt="Brands">
+            </div>
+        </div>
+
+
+        <!--              ПОПУЛЯРНЫЕ КАТЕГОРИИ                 -->
+    </main>
+
+    <footer>
+        <section class="popular-categories-section">
+            <!-- 1 -->
+            <div class="popular-categories container">
+                <div class="categories-row">
+                    <div class="categories-block">
+                        <div class="categories-elements">
+                            <div class="categories-caption">
+                                <h1 class="lng-popularCat">Популярные категории</h1>
+                            </div>
+                            <ul>
+                                <li class="pointer lng-categories">Категории</li>
+                                <li class="pointer lng-instruments">Инструменты</li>
+                                <li class="pointer lng-gel">Гель-лаки</li>
+                                <li class="pointer lng-design">Дизайн</li>
+                                <li class="pointer lng-building">Наращивание</li>
+                                <li class="pointer lng-equip">Оборудование</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- 2 -->
+                    <div class="categories-block">
+                        <div class="categories-elements">
+                            <div class="categories-caption">
+                                <h1 class="lng-popularCat">Популярные категории</h1>
+                            </div>
+                            <ul>
+                                <li class="pointer lng-categories">Категории</li>
+                                <li class="pointer lng-instruments">Инструменты</li>
+                                <li class="pointer lng-gel">Гель-лаки</li>
+                                <li class="pointer lng-design">Дизайн</li>
+                                <li class="pointer lng-building">Наращивание</li>
+                                <li class="pointer lng-equip">Оборудование</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+
+                    <div class="categories-block">
+                        <div class="categories-elements">
+                            <div class="categories-caption">
+                                <h1 class="lng-popularCat">Популярные категории</h1>
+                            </div>
+                            <ul>
+                                <li class="pointer lng-categories">Категории</li>
+                                <li class="pointer lng-instruments">Инструменты</li>
+                                <li class="pointer lng-gel">Гель-лаки</li>
+                                <li class="pointer lng-design">Дизайн</li>
+                                <li class="pointer lng-building">Наращивание</li>
+                                <li class="pointer lng-equip">Оборудование</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+
+                    <div class="categories-block">
+                        <div class="categories-elements">
+                            <div class="categories-caption">
+                                <h1 class="lng-popularCat">Популярные категории</h1>
+                            </div>
+                            <ul>
+                                <li class="pointer lng-categories">Категории</li>
+                                <li class="pointer lng-instruments">Инструменты</li>
+                                <li class="pointer lng-gel">Гель-лаки</li>
+                                <li class="pointer lng-design">Дизайн</li>
+                                <li class="pointer lng-building">Наращивание</li>
+                                <li class="pointer lng-equip">Оборудование</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--                КОНТАКТЫ               -->
+        <section class="contacts">
+            <div class="contacts-row container">
+
+                <!--      СОЦ СЕТИ       -->
+
+                <div class="social-links">
+                    <div class="youtube">
+                        <img src="./images/beauty-yt.svg" alt="Youtube">
+                    </div>
+                    <div class="vk">
+                        <img src="./images/beauty-vk.svg" alt="VKontakte">
+                    </div>
+                    <div class="facebook">
+                        <img src="./images/beauty-facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="instagtam">
+                        <img src="./images/beauty-inst.svg" alt="Instagramm">
+                    </div>
+                </div>
+
+                <!--      АДРЕСС         -->
+
+
+
+                <!--  НОМЕР\ОБРАТНЫЙ ЗВОНОК  -->
+
+                <div class="contacts-call">
+                    <div class="contacts-adress">
+                        <span class="lng-adress">
+                            198555, Невский пр. 140, офис 140
+                        </span>
+                    </div>
+                    <span class="contacts-number">
+                        8 (812) 123-45-67
+                    </span>
+                    <div class="contacts-call-number-btn">
+                        <button>
+                            <span class="lng-callBack2">Обратный звонок</span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!--         SIGNA            -->
+
+        <div class="signature">
+            <div class="container signature-text">
+                <span class="lng-authors">
+                    Лучший магазин (с) 2019 Все права защищены.
+                    Интернет-магазин оборудования для салонов красоты
+                </span>
+                <span class="pointer lng-politic">
+                    Политика конфиденциальности
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/lang.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/render.js"></script>
+    <script src="./scripts/liveSearch.js"></script>
+</body>
+
+</html>
