@@ -85,9 +85,29 @@ function authorization() {
             openLoginMenu.style.opacity = '0'
             closeMenu()
             document.querySelector('.name').innerHTML = login
-            profile.style.display = 'flex'   
+            profile.style.display = 'flex'
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 2500,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              
+              Toast.fire({
+                icon: 'success',
+                title: 'Успешная авторизация'
+              })   
     } else {
-        alert('Неверный логин или пароль')
+        Swal.fire({
+            icon: 'error',
+            title: 'Ошибка авторизации',
+            text: 'Неверный логин или пароль',
+          })
         loginInput.value = ''
         passwordInput.value = ''
     }
@@ -139,4 +159,11 @@ openBasketBtn.addEventListener('click', openBasketMenu)
 loginBtn.addEventListener('click', authorization)
 signOutBtn.addEventListener('click', signOut)
 
-// 'login' 'close-menu'
+// // 'login' 'close-menu'
+// Swal.fire(
+//     'Good job!',
+//     'You clicked the button!',
+//     'success'
+//   )
+
+

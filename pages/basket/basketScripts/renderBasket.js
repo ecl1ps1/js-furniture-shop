@@ -141,11 +141,35 @@ function numberGoods() {
 
 // функция покупки 
 function buyBasketProducts() {
-    let confirm = window.confirm('Buy?')
-    if (confirm) {
-        localStorage.removeItem('basketArr')
+    if (document.querySelector('.number-goods').innerHTML == '0') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Корзина пустая',
+          })
+    } else {
+Swal.fire({
+        title: 'Вы уверены что хотите приобрести данные товары?',
+        text: `true`,
+        icon: 'warning',
+        cancelButtonText: 'Отмена',
+       confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Добавить'
+      }).then((result) => {
+        if (result.isConfirmed) {
+		        localStorage.removeItem('basketArr')
+          Swal.fire(
+            'Успешно',
+            'Вы приобрели выбранные товары',
+            'success'
+          )
+        setTimeout(function() {
         location.reload()
+        }, 2000)
+        }
+      })
     }
+     
 }
 
 // вызовы функций

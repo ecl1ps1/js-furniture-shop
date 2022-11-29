@@ -15,7 +15,7 @@ if (rootProducts) {
                                 <p class="lng-offerName">${title}</p>
                                 <span class='price'>${price}</span>
                                 <div>
-                                <button id='${id}' onclick="confirm()" class="buy-offer-btn lng-buy btn">Купить</button>
+                                <button id='${id}' class="buy-offer-btn lng-buy btn">Купить</button>
                                 </div>
                             </li>
                             `
@@ -52,6 +52,39 @@ if (rootProducts) {
     }
     renderProducts()
 
+function addListeners() {
+            const buyButtons = document.querySelectorAll('.buy-offer-btn')
+    buyButtons.forEach((element)=> {
+        element.addEventListener('click', function() {
+            Swal.fire({
+                title: 'Вы уверены что хотите добавить данный товар в корзину?',
+                text: `${element.parentElement.parentElement.children[2].innerHTML}`,
+                icon: 'warning',
+                cancelButtonText: 'Отмена',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Добавить'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    let value = Number(basketCount.innerHTML)
+                    value++
+                    basketCount.innerHTML = value
+                    updateBasket()
+                    confirmWin.style.display = 'none'
+                  Swal.fire(
+                    'Успешно',
+                    'Вы добавили данный продукт в корзину',
+                    'success'
+                  )
+                }
+              })
+        })
+    })
+}
+
+
+
     // смена валюты товаров 
     function changeMoneyFunc() {
         const moneys = document.querySelectorAll('.price')
@@ -83,4 +116,8 @@ if (rootProducts) {
         changeLanguage()
     }
     setTimeout(changeMoneyFunc, 2000);
+    setTimeout(addListeners, 2000);
 }
+
+
+
